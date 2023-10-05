@@ -1,0 +1,282 @@
+/* Basic CSS styles for the left section */
+.left-pane {
+    width: 20%;
+    height: 100vh;
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.new-chat-button,
+.close-sidebar-button {
+    width: 80%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #ccc;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 6px;
+}
+
+.close-sidebar-button {
+    width: 15%;
+    height: 95%;
+    margin-right: 4px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.close-sidebar-button img {
+    width: 20px;
+    height: 18px;
+}
+
+.list-of-chat-section {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.single-chat-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    background-color: transparent;
+}
+
+.chat-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-title {
+    flex-grow: 1;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.bottom-section-left {
+    margin-top: auto;
+}
+
+.upgrade-section {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: transparent;
+    margin-right: 5px;
+}
+
+.account-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.upgrade-to-plus-text {
+    font-weight: bold;
+    flex-grow: 1;
+    color: #ccc;
+}
+
+.new-label {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.avatar-section {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-name {
+    flex-grow: 1;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.three-dots {
+}
+
+/* Add these hover effects for buttons and single-chat-item */
+.new-chat-button:hover,
+.close-sidebar-button:hover,
+.single-chat-item:hover {
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Apply CSS transitions to the left pane */
+.left-pane {
+    position: 
+    top: 0;
+  
+}
+
+/* Apply CSS transitions to the left pane */
+.left-pane {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color: #000;
+    display: block;
+    transition: left 0.3s ease;
+}
+
+.left-pane.hidden {
+    left: -20%; /* Move left_pane to hide it */
+}
+
+/* Ensure bottom_section_left remains at the bottom */
+.bottom-section-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.three-dots-img{
+    width: 20px;
+}
+
+/* Right Pane Styles */
+.right-pane {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 77.5%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Floating Buttons Section Styles */
+.floating-buttons {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gpt-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.gpt-button:hover {
+    background-color: #0056b3;
+}
+
+/* Messages Section Styles */
+.messages-section {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+    width: 60%;
+    margin-left:200px;
+}
+
+.message-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+   
+   
+    
+}
+
+.message-card:nth-child(odd) {
+    background-color: #f4f4f4;
+    
+}
+
+/* Send Message Section Styles */
+./* Send Message Section Styles */
+.send-message {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+.input-box-container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left:200px;
+    margin-bottom: 10px;
+}
+
+.input-box {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    resize: none;
+}
+
+.send-icon {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-icon:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chat App</title>
+</head>
+<body>
+    <div class="left-pane">
+        <!-- Top Header Section -->
+        <div class="top-header">
+            <button class="new-chat-button" id="new-chat">New Chat</button>
+            <button class="close-sidebar-button" id="close-sidebar">
+                <img src="img/close.png" alt="Close Sidebar">
+            </button>
+        </div>
+
+        <!-- List of Chat Section -->
+        <div class="list-of-chat-section" id="chat-list">
+            <!-- Single Chat Item (sample) -->
+            <div class="single-chat-item">
+                <div class="chat-icon"></div>
+                <span class="chat-title">Sample Chat</span>
+            </div>
+        </div>
+
+        <!-- Bottom Section Left -->
+        <div class="bottom-section-left">
+            <!-- Upgrade Section -->
+            <div class="upgrade-section">
+                <div class="account-icon"></div>
+                <span class="upgrade-to-plus-text">Upgrade to Plus</span>
+                <span class="new-label">New</span>
+            </div>
+
+            <!-- Avatar Section -->
+            <div class="avatar-section">
+                <div class="user-avatar"></div>
+                <span class="user-name">Vemmy Ransford </span>
+                <button class="three-dots">
+                    <img class="three-dots-img" src="img/more1.png" alt="Three Dots">
+                </button>
+                <!-- Right Pane -->
+                <div class="right-pane">
+                    <!-- Floating Buttons Section -->
+                    <div class="floating-buttons">
+                    <button class="gpt-button">GPT-3.5</button>
+                    <button class="gpt-button">GPT-4</button>
+                </div>
+
+                    <!-- Messages Section -->
+                    <div class="messages-section" id="messages">
+                        <!-- Messages will be added here dynamically -->
+                    </div>
+
+                        <!-- Send Message Section -->
+                        <div class="send-message">
+                            <div class="input-box-container">
+                                <textarea class="input-box" id="message-input" placeholder="Type your message..."></textarea>
+                                <button class="send-icon" id="send-button">Send</button>
+                            </div>
+                        </div>
+        </div>
+    </div>
+                    </div>
+                </div>
+            </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <!-- Add JavaScript code here -->
+    <script src="script.js"></script>
+</body>
+</html>
